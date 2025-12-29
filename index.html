@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Danish Khan | Portfolio</title>
+  <link rel="stylesheet" href="./style/style.css" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@300..900&amp;family=Inter:wght@100..900&amp;family=Syne&amp;display=swap"
+    rel="stylesheet">
+
+</head>
+
+<body>
+
+  <header class="navbar">
+    <!-- <div class="logo"> </div> -->
+    <nav>
+      <!-- <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a> -->
+    </nav>
+  </header>
+  <br />
+  <section class="hero">
+    
+    <h1>Hi, I'm</h1>
+    <h1 class="header-name">Danish Khan</h1>
+      
+    <div class="greet">Nice to meet you.</div>
+
+
+
+
+  </section>
+
+  <section id="social-link">
+    <div class="icon-button-container">
+      <button class="icon-button"><img class="silk-image" src="./asset/icon/github.svg"></button>
+      <button class="icon-button"><img class="silk-image" src="./asset/icon/linkedIn.svg"></button>
+      <button class="icon-button"><img class="silk-image" src="./asset/icon/medium.svg"></button>
+    </div>
+  </section>
+
+
+
+
+  <section id="about" class="section">
+    <!-- <div class="about-me"> <img src="my_image.png"> </div> -->
+
+
+    <div class="aboutme-container">
+      <div class="aboutme-text-content">
+        <div class="section-title-font">About Me</div>
+        <!-- <h1>First Line of Text</h1> -->
+        <p>I’m a software engineer specializing in mobile application development. I have experience building apps using SwiftUI and Flutter</p>
+        
+        <div class="email-wrap">
+          Email: <span id="email">
+            <a href="#" onclick="onClickEmail()" style="color: black;" id="email">danishdev64@gmail.com</a>
+          </span>
+          <img src="./asset/icon/copy.svg" onclick="copyEmail()" >
+          <!-- <svg xmlns="http://www.w3.org/2000/svg"  onclick="copyEmail()" width="16" height="16" fill="currentColor" class="bi bi-copy" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M4 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1zM2 5a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1v-1h1v1a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h1v1z"/>
+          </svg> -->
+        </div>
+
+        <button class="animated-arrow-btn" type="button" onclick="openResume()" >
+          Resume
+          <svg class="arrow-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <path d="M5 12h14M13 5l7 7-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+              stroke-linejoin="round" />
+          </svg>
+        </button>
+      </div>
+      <img src="asset/image/my_image.png" alt="Image" class="aboutme-image">
+    </div>
+  </section>
+
+  <section id="experience" class="section">
+    <div class="section-title-font">Experience</div>
+    <div class="experience-grid">
+
+
+      <div class="exp-card">
+        <span class="counter">01</span>
+
+        <img src="./asset/image/cm_deqode.png" alt="Company Logo" class="company-logo" />
+
+        <div class="text-content">
+          <h3>Software Engineer</h3>
+          <p>Deqode</p>
+        </div>
+      </div>
+
+      <div class="exp-card">
+        <span class="counter">02</span>
+
+        <img src="./asset/image/cm_alt.png" alt="Company Logo" class="company-logo" />
+
+        <div class="text-content">
+          <h3>Software Engineer</h3>
+          <p>Alt Invest</p>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+
+  <!-- <h2>About Me</h2>
+    <p>
+      I'm a passionate mobile developer with experience in building scalable
+      applications using SwiftUI, Combine, Flutter and backend integrations.
+    </p> -->
+
+  <!-- PROJECTS -->
+  <section id="projects" class="section">
+    <div class="section-title-font">Projects</div>
+
+    <div class="project-grid">
+      <div class="project-card" onclick="openModal(0)">
+        <img src="./asset/image/sc_credit_card_app.png" alt="Project 1" />
+        <h3>Credit Card App</h3>
+        <p>SwiftUI · Animation</p>
+      </div>
+
+      <div class="project-card" onclick="openModal(1)">
+        <img src="./asset/image/sc_wallpaper_app.png" alt="Project 2" />
+        <h3>Wallpaper App</h3>
+        <p>SwiftUI · Local Store</p>
+      </div>
+
+      <div class="project-card" onclick="openModal(2)">
+        <img src="./asset/image/sc_local_share_app.png" alt="Project 3" />
+        <h3>Local Share App</h3>
+        <p>SwiftUI · MacApp · Local Server</p>
+      </div>
+
+      <div class="project-card" onclick="openModal(3)">
+        <img src="./asset/image/sc_alt_invest_app.png" alt="Project 3" />
+        <h3>Alt Invest</h3>
+        <p>SwiftUI · MacApp · Local Server</p>
+      </div>
+
+      <div class="project-card" onclick="openModal(4)">
+        <img src="./asset/image/sc_zero_balance_app.png" alt="Project 3" />
+        <h3>Zero Balance App</h3>
+        <p>SwiftUI · Payment</p>
+      </div>
+       <div class="project-card" onclick="openModal(5)">
+        <img src="./asset/image/sc_allstars_app.png" alt="Project 3" />
+        <h3>AllStars Trader</h3>
+        <p>SwiftUI · Trading</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    © 2025 Danish Khan
+  </footer>
+
+  <script src="./script/script.js"></script>
+  <!-- MODAL -->
+  <div class="modal" id="modal" onclick="clickOutside(event)">
+
+    <div class="modal-content">
+      <span class="close" onclick="closeModal()">×</span>
+      <img src="./asset/image/sc_college_alt_app.png" alt="Demo Image" class="modal-media" id="modalImage">
+      <video class="modal-media" id="modalVideo" controls>
+        <source src="./asset/video/credit_card_app.mov" type="video/mp4" id="modalVideoSource">
+        Your browser does not support the video tag.
+      </video>
+
+      <h3 id="modalTitle">Video Streaming App</h3>
+      <p id="modalDesc">iOS video streaming app with DRM, AVPlayer, and offline playback.</p>
+    </div>
+  </div>
+
+  
+</body>
+
+</html>

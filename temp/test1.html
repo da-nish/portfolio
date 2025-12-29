@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Image with Text and Button</title>
+<style>
+  .aboutme-container {
+    display: flex;
+    align-items: center; /* vertically center */
+    justify-content: space-between; /* space between text and image */
+    padding: 20px;
+    gap: 20px;
+  }
+
+  .aboutme-text-content {
+    flex: 1; /* take available space */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .aboutme-text-content h1,
+  .aboutme-text-content p {
+    margin: 0;
+  }
+
+  .aboutme-text-content button {
+    width: fit-content; /* button size fits content */
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+
+  .aboutme-image {
+    max-width: 200px;
+    height: auto;
+  }
+
+  
+  .btn {
+  font-size: 16px;
+  padding: 12px 22px;
+  border: 2px solid #222;
+  background: transparent;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  transition: background 0.3s ease;
+}
+
+.btn span {
+  transition: transform 0.3s ease;
+}
+
+.btn:hover {
+  background: #f5f5f5;
+}
+
+.btn:hover span {
+  transform: translateX(6px);
+}
+</style>
+</head>
+<body>
+<button class="btn">
+  Next <span>→</span>
+</button>
+
+
+<hr>
+<div class="container">
+  <div class="text-content">
+    <h1>First Line of Text</h1>
+    <p>Second Line of Text</p>
+    <button>Click Me</button>
+  </div>
+  <img src="your-image.jpg" alt="Image" class="image">
+</div>
+
+
+
+
+</body>
+</html>

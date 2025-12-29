@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Image with Text and Button</title>
+<style>
+ 
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", Arial, sans-serif;
+}
+
+body {
+  background: #f8fafc;
+  color: #0f172a;
+  padding: 40px;
+}
+
+/* GRID */
+.experience-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(224px, 1fr));
+  gap: 24px;
+}
+
+/* CARD */
+.exp-card {
+    position: relative;
+    background: #ffffff;
+    /* border-radius: 16px; */
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    /* border: 1px solid #e5e7eb; */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.04);
+    transition: all 0.3s 
+ease;
+}
+
+.exp-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 16px 30px rgba(0,0,0,0.08);
+}
+
+/* COUNTER (TOP RIGHT) */
+.counter {
+  position: absolute;
+  top: 14px;
+  right: 16px;
+  font-size: 42px;
+  font-weight: 700;
+  color: #e5e7eb;
+}
+
+/* COMPANY LOGO */
+.company-logo {
+    width: 72px;
+    height: 72px;
+    object-fit: contain;
+    /* border-radius: 12px; */
+    /* background: #f1f5f9; */
+    padding: 10px;
+}
+
+/* TEXT */
+.text-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.text-content h3 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+.text-content p {
+  font-size: 14px;
+  color: #64748b;
+}
+
+
+
+
+</style>
+</head>
+<body>
+  
+  
+
+  <section class="experience-grid">
+
+    <div class="exp-card">
+      <span class="counter">01</span>
+
+      <img src="https://placehold.co/140x140/gray/white?text=D" alt="Company Logo" class="company-logo" />
+
+      <div class="text-content">
+        <h3>Frontend Developer</h3>
+        <p>ABC Technologies</p>
+      </div>
+    </div>
+
+    <div class="exp-card">
+      <span class="counter">02</span>
+
+      <img src="https://placehold.co/140x140/gray/white?text=D" alt="Company Logo" class="company-logo" />
+
+      <div class="text-content">
+        <h3>UI Engineer</h3>
+        <p>XYZ Studio</p>
+      </div>
+    </div>
+
+  </section>
+
+
+</body>
+</html>
