@@ -44,7 +44,7 @@ const projects = [
     ]
   },
   {
-    title: "Alt Invest",
+    title: "Alt Capital",
     desc: "",
     path: "./asset/image/sc_college_alt_app.png",
     type: "image",
