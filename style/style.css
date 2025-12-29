@@ -453,7 +453,6 @@ footer {
 .modal-media {
     width: 100%;
     height: auto; /* Keeps aspect ratio */
-    margin-bottom: 15px; /* Space between media and text */
     display: block;
 }
 
@@ -473,3 +472,14 @@ footer {
 .header-name:hover {
   text-shadow: 6px 6px 0px #bebebe;
 }
+
+ul {
+    list-style-type: disc; /* default bullet */
+    margin-left: 20px;
+    margin-top: 6px;
+}
+
+.model-text-content{
+  padding: 16px 20px;
+}
+       
