@@ -115,6 +115,7 @@ footer {
   height: 40px;
   border-radius: 50%;
   border: 1px solid #999;
+  background: transparent;
   cursor: pointer;
   transition: all 0.3s ease;
   font-size: 20px;

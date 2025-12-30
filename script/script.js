@@ -146,3 +146,16 @@ function openResume() {
 function onClickEmail() {
   window.open('https://mail.google.com/mail/?view=cm&to=danishdev64@gmail.com&body=Hi', '_blank');
 }
+
+function openSocialLink(key){
+  let link = {
+    leetcode: "https://leetcode.com/danishh",
+    medium: "#",
+    linkedin: "https://www.linkedin.com/in/da-nish",
+    github: "https://github.com/da-nish",
+
+  }
+  let url = link[key] ?? '#'
+
+  window.open(url, '_blank');
+}
